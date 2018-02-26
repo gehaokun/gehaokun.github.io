@@ -1,311 +1,678 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-<!-- Head tag -->
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Description-->
-  
-
-  <!--Author-->
-  
-  <meta name="author" content="John Doe">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="Hexo"/>
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="Hexo"/>
-  <!--Type page-->
-  
-      <meta property="og:type" content="website" />
-  
-  <!--Page Cover-->
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Title -->
   
   <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
 
+  
 
-  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
-
-  <!-- Custom CSS/Sass -->
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
   <link rel="stylesheet" href="/css/style.css">
 
-  <!----------------------------
-  https://github.com/GallenHu/hexo-theme-Daily
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
 
- _____            _   _
-|  __ \          (_) | |
-| |  | |   __ _   _  | |  _   _
-| |  | |  / _` | | | | | | | | |
-| |__| | | (_| | | | | | | |_| |
-|_____/   \__,_| |_| |_|  \__, |
-                          __/ |
-                         |___/
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
 
-    --------------------------->
+  
+    <link rel="stylesheet" href="/css/home.css" >
+  
+
+  
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
 
 </head>
 
 
-<body>
 
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    <div class="logo">
-      <a href="/" rel="home">
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->  
         
-        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
+        <section class="awSlider">
+          <div class="carousel slide carousel-fade " data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               
+                  
+                    <div class="item active">
+                  
+                    <img id="carousel-img0" src="/css/images/home-bg.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img0 = new Image();
+                      var imageTag0 = document.getElementById("carousel-img0");
+                      img0.src = imageTag0.src;
+                      img0.onload=function(){
+                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag0.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag0.style.height = document.body.clientHeight + "px";
+                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img1" src="/css/images/sample.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img1 = new Image();
+                      var imageTag1 = document.getElementById("carousel-img1");
+                      img1.src = imageTag1.src;
+                      img1.onload=function(){
+                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag1.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag1.style.height = document.body.clientHeight + "px";
+                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1920x1080">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img2 = new Image();
+                      var imageTag2 = document.getElementById("carousel-img2");
+                      img2.src = imageTag2.src;
+                      img2.onload=function(){
+                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag2.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag2.style.height = document.body.clientHeight + "px";
+                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </section>
+        <script>
+          $('section.awSlider .carousel').carousel({
+              pause: '',
+              interval: 5000
+          });
+          var startImage = $('section.awSlider .item.active > img').attr('src');
+          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+              var bscn = $(this).find('.item.active > img').attr('src');
+              $('section.awSlider > img').attr('src', bscn);
+          });
+        </script>
+      
+
+    
+ 
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
         
-      </a>
-    </div>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          
-          
-            <li>
-              <a href="/.">
-                
-                  home
-                
-              </a>
-            </li>
-          
-            <li>
-              <a href="/archives">
-                
-                  archive
-                
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">Hexo</a></h1>
+            <h3></h3>
+            <h5>John Doe</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+    
     </div>
   </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Startseite</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">Archive</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">Kategorien</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/about">About</a>
+        
+      </p>
+  </div>
+
 </header>
-
-
-  <!-- Main Content -->
-  <div class="site-content home">
-  <main class="content-area">
-    
+  
+  <div id="container">
+    <div id="wrap">
       
-        <div class="even">
-          
-
-<div class="container">
-  <article class="post">
-    
-    <h1 class="entry-title">
-      <a href="/2018/01/18/今年贪玩公司的《补考Online2018》即将就三月份在全国各大高校首发/" rel="bookmark">
-        今年贪玩公司的《补考Online2018》即将就三月份在全国各大高校首发  
-      </a>
-    </h1>
-    
-
-    <p class="posted-on">
-    2018-01-18
-    </p>
-    <div class="tags-links">
-      
-    </div>
-  </article>
-</div>
-        </div> 
-      
-    
-      
-        <div class="odd">
-          
-
-<div class="container">
-  <article class="post">
-    
-    <h1 class="entry-title">
-      <a href="/2017/12/21/插入练习/" rel="bookmark">
-        Untitled  
-      </a>
-    </h1>
-    
-
-    <p class="posted-on">
-    2017-12-21
-    </p>
-    <div class="tags-links">
-      
-    </div>
-  </article>
-</div>
-        </div>
-      
-    
-      
-        <div class="even">
-          
-
-<div class="container">
-  <article class="post">
-    
-    <h1 class="entry-title">
-      <a href="/2017/12/08/贪吃蛇/" rel="bookmark">
-        贪吃蛇  
-      </a>
-    </h1>
-    
-
-    <p class="posted-on">
-    2017-12-08
-    </p>
-    <div class="tags-links">
-      
-    </div>
-  </article>
-</div>
-        </div> 
-      
-    
-      
-        <div class="odd">
-          
-
-<div class="container">
-  <article class="post">
-    
-      
-      
-
-      <a href="/2017/12/02/测试/">
-          <img src="http://ozvcl5dru.bkt.clouddn.com/5928d7f58c8f5.jpg" alt="测试" class="attachment-post-thumbnail">
-        </a>
-    
-    <h1 class="entry-title">
-      <a href="/2017/12/02/测试/" rel="bookmark">
-        测试  
-      </a>
-    </h1>
-    
-
-    <p class="posted-on">
-    2017-12-02
-    </p>
-    <div class="tags-links">
-      
-    </div>
-  </article>
-</div>
-        </div>
-      
-    
-      
-        <div class="even">
-          
-
-<div class="container">
-  <article class="post">
-    
-    <h1 class="entry-title">
-      <a href="/2017/11/23/hello-world/" rel="bookmark">
-        Hello World  
-      </a>
-    </h1>
-    
-
-    <p class="posted-on">
-    2017-11-23
-    </p>
-    <div class="tags-links">
-      
-    </div>
-  </article>
-</div>
-        </div> 
-      
-    
-
-    
-
-  </main>
-</div>
-
-  <!-- Footer -->
-  <!-- Footer-widgets -->
-<div class="footer-widgets">
-  <div class="row inside-wrapper">
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">关于本站</h1>
-        <div class="custom-widget-content">
-          
-          <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily">如何自定义这里的内容(配置教程)?</a></li></ul>
-        </div>
-      </aside>
-    </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Contact</h1>
-        <div class="widget-text">
-          
             
-              <a href="https://github.com/GallenHu" class="icon icon-github" target="_blank">github</a>
-            
-          
-        </div>
-      </aside>
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-今年贪玩公司的《补考Online2018》即将就三月份在全国各大高校首发"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/01/18/今年贪玩公司的《补考Online2018》即将就三月份在全国各大高校首发/">今年贪玩公司的《补考Online2018》即将就三月份在全国各大高校首发</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/01/18/今年贪玩公司的《补考Online2018》即将就三月份在全国各大高校首发/" class="article-date">
+	  <time datetime="2018-01-18T06:01:52.129Z" itemprop="datePublished">2018-01-18</time>
+	</a>
+
+      
+      
     </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Search</h1>
-        <div class="widget-text">
-          <form onSubmit="return appDaily.submitSearch('')">
-            <p>
-              <input type="text" placeholder="search..." id="homeSearchInput">
-            </p>
-            <!-- <input type="submit" value="GO"> -->
-          </form>
-        </div>
-      </aside>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>标签（空格分隔）： 校园事件</p>
+<p>##One：</p>
+<blockquote>
+<p>最近朋友圈里有款游戏又要火了，叫补考Online2018。预计今年三月份，在各大高校联合发布上市。许多朋友纷纷都下了预购，怪我大脑CPU等硬件软件都跟不上配置，操作系统还装的是linux原生态的，实在是跑不动这类高端玩家的游戏，这款游戏其实是另一些游戏的附送产品，比如吃鸡啊，DNF啊，撸啊撸等，只要在考试副本开启之前，把上系的游戏成就打到白金阶段的玩家，贪玩公司会免费附送这款补考Online2018游戏给大家拜年。女朋友又没有，我连补考都没有得发说说炫耀，真的好惨，所以只能写写段子逗大家玩了。(以上都是玩笑话，刷刷存在感的，见谅)</p>
+</blockquote>
+<p>##Two：</p>
+<blockquote>
+<p>考试绿了绿了，答卷666，交卷0.6。大扎好，我系渣渣困，给大家介绍款超好玩的游戏——贪玩补考。贪玩补考2018这系你没有玩过的船新版本，继续体验三道题，里将会跟我一样，爱上节款游戏。今晚八点，准时开考。是兄弟就来抄我。(ps:我都想问我自己，到底有完没完哈哈哈，没办法，这个梗实在太适合用在此处了，对不起对不起，我又把快乐建立在别人的痛苦上了我道歉)</p>
+</blockquote>
+
+      
     </div>
+    <footer class="article-footer">
+      
+      
+      
+    </footer>
   </div>
-</div>
-<!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>Hexo &copy; 2018</span>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-插入练习"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
     
-      <span class="split">|</span>
-      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
     
-  </p>
+    <div class="article-meta">
+      
+	<a href="/2017/12/21/插入练习/" class="article-date">
+	  <time datetime="2017-12-21T02:15:36.779Z" itemprop="datePublished">2017-12-21</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="插入练习"><a href="#插入练习" class="headerlink" title="插入练习"></a>插入练习</h1><p>标签（空格分隔）： 未分类</p>
+<hr>
+<p><img src="http://ozvcl5dru.bkt.clouddn.com/5928d7f58c8f5.jpg" alt="“初音未来”"><br><a href="http://www.jianshu.com" target="_blank" rel="noopener">简书</a><br> Idina Menze和Caleb Hyles激情对唱Let It Go：  </p>
+<p><iframe height="498" width="510" src="http://player.youku.com/embed/XNjcyMDU4Njg0" frameborder="0" allowfullscreen><br></iframe></p>
+<p><iframe width="560" height="315" src="http://tv.sohu.com/upload/static/share/share_play.html#90268916_9365222_0_9001_0" frameborder="0" allowfullscreen></iframe></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNjcyMDU4Njg0">
+
+
+
+
+
+</iframe>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-贪吃蛇"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/08/贪吃蛇/">贪吃蛇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/12/08/贪吃蛇/" class="article-date">
+	  <time datetime="2017-12-08T03:51:51.164Z" itemprop="datePublished">2017-12-08</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;  </span><br><span class="line">&lt;html&gt;  </span><br><span class="line">&lt;body&gt;  </span><br><span class="line">    &lt;canvas id=&quot;can&quot; width=&quot;400&quot; height=&quot;400&quot; style=&quot;background: Black&quot;&gt;&lt;/canvas&gt;  </span><br><span class="line">    &lt;script&gt;  </span><br><span class="line">        var sn = [ 42, 41 ], dz = 43, fx = 1, n, ctx = document.getElementById(&quot;can&quot;).getContext(&quot;2d&quot;);  </span><br><span class="line">        function draw(t, c) &#123;  </span><br><span class="line">            ctx.fillStyle = c;  </span><br><span class="line">            ctx.fillRect(t % 20 * 20 + 1, ~~(t / 20) * 20 + 1, 18, 18);  </span><br><span class="line">        &#125;  </span><br><span class="line">        document.onkeydown = function(e) &#123;  </span><br><span class="line">            fx = sn[1] - sn[0] == (n = [ -1, -20, 1, 20 ][(e || event).keyCode - 37] || fx) ? fx : n  </span><br><span class="line">        &#125;;  </span><br><span class="line">        !function() &#123;  </span><br><span class="line">            sn.unshift(n = sn[0] + fx);  </span><br><span class="line">            if (sn.indexOf(n, 1) &gt; 0 || n&lt;0||n&gt;399 || fx == 1 &amp;&amp; n % 20 == 0 || fx == -1 &amp;&amp; n % 20 == 19)  </span><br><span class="line">                return alert(&quot;GAME OVER&quot;);  </span><br><span class="line">            draw(n, &quot;Lime&quot;);  </span><br><span class="line">            if (n == dz) &#123;  </span><br><span class="line">                while (sn.indexOf(dz = ~~(Math.random() * 400)) &gt;= 0);  </span><br><span class="line">                draw(dz, &quot;Yellow&quot;);  </span><br><span class="line">            &#125; else  </span><br><span class="line">                draw(sn.pop(), &quot;Black&quot;);  </span><br><span class="line">                setTimeout(arguments.callee, 130);  </span><br><span class="line">        &#125;();  </span><br><span class="line">    &lt;/script&gt;  </span><br><span class="line">&lt;/body&gt;  </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<iframe src="./1.html" id="player" width="100%" height="400px" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+
+
+<p>在此输入正文</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-测试"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/02/测试/">测试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/12/02/测试/" class="article-date">
+	  <time datetime="2017-12-02T01:58:06.890Z" itemprop="datePublished">2017-12-02</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>在此输入正文</p>
+<p>地球到此一游</p>
+</blockquote>
+<p><img src="http://ozvcl5dru.bkt.clouddn.com/5928d7f58c8f5.jpg" alt=""></p>
+<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0tdtncmfw6a&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/11/23/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/11/23/hello-world/" class="article-date">
+	  <time datetime="2017-11-23T10:43:02.302Z" itemprop="datePublished">2017-11-23</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 Hexo All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
 </footer>
 
 
-  <!-- After footer scripts -->
-  <!-- scripts -->
-<script src="/js/app.js"></script>
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+  <script src="/js/home.js"></script>
 
 
 
 
 
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Hexo
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 John Doe All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
 </body>
-
 </html>
